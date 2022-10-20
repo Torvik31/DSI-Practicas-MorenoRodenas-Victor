@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  background-color: #F27059;
+  font-family: 'roboto', sans-serif;
+  padding: 45px 45px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+
+
+
+/* LEER*/
+/* A PARTIR DE AQUI TODO ES NECESARIO PARA EL FUNCIONAMIENTO DEL MENU ACORDEON */
+/* Sacado en su gran mayoria de internet y adaptado a mi caso particular, debido a que css no se ha dado antes de la realizacion de esta practica.
+   A pesar de ello, de alguna forma debia implementar el menu acordeon seleccionado en los patrones de diseño, por lo que he seguido lo encontrado en internet.*/
+
+
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
+.acordeon {
+  color: rgb(0, 0, 0);
+  background-color: #F7B267;
+  padding: 1px 45px;
+}
+
+.acordeon .contenedor {
+    position: relative;
+}
+  
+/* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+.acordeon .etiqueta {
+    position: relative;
+    padding: 5px 0;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+  
+/* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+.acordeon .etiqueta::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+  
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+.acordeon .contenido {
+    position: relative;
+    background: #F7B267;
+    height: 0;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+}
+  
+/* Añade una línea horizontal entre los contenidos */
+.acordeon hr {
+    border: 1px solid #F25C54;
+}
+
+/* Muestra la parte de contenido cuando está activa. Establece la altura */
+.acordeon .contenedor.activa .contenido {
+    height: auto;
+}
+  
+/* Cambia de signo positivo a negativo una vez activado */
+.acordeon .contenedor.activa .etiqueta::before {
+    content: '-';
+    font-size: 30px;
+}
