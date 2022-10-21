@@ -4,10 +4,15 @@ body {
   background-color: #F27059;
   font-family: 'roboto', sans-serif;
   padding: 45px 45px;
+  text-align: justify;
 }
 
 h1 {
   text-align: center;
+}
+
+hr {
+    border: 1px solid #000000;
 }
 
 
@@ -56,7 +61,6 @@ h1 {
     position: relative;
     background: #F7B267;
     height: 0;
-    text-align: justify;
     overflow: hidden;
     transition: 0.5s;
 }
