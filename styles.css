@@ -38,17 +38,7 @@ hr {
     background-color: #BEB7A4
 }
 
-
-
-
-
-
-/* LEER*/
 /* A PARTIR DE AQUI TODO ES NECESARIO PARA EL FUNCIONAMIENTO DEL MENU ACORDEON */
-/* Sacado en su gran mayoria de internet y adaptado a mi caso particular, debido a que css no se ha dado antes de la realizacion de esta practica.
-   A pesar de ello, de alguna forma debia implementar el menu acordeon seleccionado en los patrones de diseño, por lo que he seguido lo encontrado en internet.*/
-
-
 /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
 .acordeon {
   color: rgb(0, 0, 0);
