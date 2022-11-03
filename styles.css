@@ -33,10 +33,34 @@ hr {
     border: 1px solid #000000;
 }
 
+/* A PARTIR DE AQUI TODO ES NECESARIO PARA EL FUNCIONAMIENTO FLEX DEL FORM */
 .EnvioMensaje{
-    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
     background-color: #BEB7A4
 }
+.EnvioMensaje__form{
+    min-width: 250px;
+    flex:1;
+    text-align:center;
+    padding: 10px;
+}
+.EnvioMensaje__form-input{
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+}
+.EnvioMensaje__form-input:focus{
+    background: lightgrey;
+}
+.EnvioMensaje__imagen{
+    width:200px;
+    margin:auto;
+}
+
 
 /* A PARTIR DE AQUI TODO ES NECESARIO PARA EL FUNCIONAMIENTO DEL MENU ACORDEON */
 /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
