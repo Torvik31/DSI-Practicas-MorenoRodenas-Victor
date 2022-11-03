@@ -1,24 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
-  background-color: #F27059;
+  background-color: #FFFFFF;
   font-family: 'roboto', sans-serif;
   margin: 45px 45px;
   text-align: justify;
   font-size: 16px;
 }
 
-h1 {
-    font-size: 40px;
+.Titulo_h1 {
+    letter-spacing: .3em;
     text-align: center;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+    font-size: 40px;
 }
 
-h4 {
+.boton {
+    background: #FF3F00;
+    color: white;
+    border-style: outset;
+    border-color: #FF3F00;
+    height: 40px;
+}
+
+.SubApartados__h4 {
+    color: #FF3F00;
+    text-shadow: #FF7F11 0.1em 0.1em 0.2em;
     font-size: 18px;
 }
 
 hr {
     border: 1px solid #000000;
+}
+
+.EnvioMensaje{
+    padding: 20px 20px;
+    background-color: #BEB7A4
 }
 
 
@@ -35,7 +52,7 @@ hr {
 /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
 .acordeon {
   color: rgb(0, 0, 0);
-  background-color: #F7B267;
+  background-color: #BEB7A4;
   padding: 1px 45px;
 }
 
@@ -65,7 +82,7 @@ hr {
 /* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
 .acordeon .contenido {
     position: relative;
-    background: #F7B267;
+    background: #BEB7A4;
     height: 0;
     overflow: hidden;
     transition: 0.5s;
@@ -73,7 +90,7 @@ hr {
   
 /* Añade una línea horizontal entre los contenidos */
 .acordeon hr {
-    border: 1px solid #F25C54;
+    border: 1px solid #FF3F00;
 }
 
 /* Muestra la parte de contenido cuando está activa. Establece la altura */
