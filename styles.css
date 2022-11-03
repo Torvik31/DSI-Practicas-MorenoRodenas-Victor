@@ -103,11 +103,24 @@ hr {
   
 /* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
 .acordeon .contenido {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     position: relative;
     background: #BEB7A4;
     height: 0;
     overflow: hidden;
     transition: 0.5s;
+}
+
+.acordeon .contenido__img{
+    margin:5px;
+}
+
+.acordeon .contenido__p{
+    min-width: 400px;
+    flex:1;
+    padding: 10px;
 }
   
 /* Añade una línea horizontal entre los contenidos */
