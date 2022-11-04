@@ -16,6 +16,10 @@ body {
     top:0px;
 }
 
+.BarraNavegacion__botones{
+    display:flex;
+}
+
 .Titulo_h1 {
     letter-spacing: .3em;
     text-align: center;
@@ -29,6 +33,7 @@ body {
     border-style: outset;
     border-color: #FF3F00;
     height: 40px;
+    margin:0px 10px;
 }
 
 .SubApartados__h4 {
