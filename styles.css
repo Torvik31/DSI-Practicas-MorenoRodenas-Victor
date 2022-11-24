@@ -31,9 +31,15 @@ body {
     background: #FF3F00;
     color: white;
     border-style: outset;
-    border-color: #FF3F00;
+    border-color: black;
     height: 40px;
     margin:0px 10px;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background: #FF7F11;
+    color: black;
 }
 
 .SubApartados__h4 {
