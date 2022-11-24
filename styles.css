@@ -156,8 +156,8 @@ hr {
     font-size: 40px;
     text-align: center;
     display: grid;
-    grid-template-rows: 300px 300px 1fr;
-    grid-template-columns: 300px 300px 300px 1fr;
+    grid-template-rows: 300px 1fr;
+    grid-template-columns: 300px 300px 300px 300px 300px 1fr;
     grid-auto-rows: 1fr;
     grid-auto-columns: 1fr;
     grid-auto-flow: dense;
