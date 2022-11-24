@@ -1,4 +1,5 @@
 /*STYLES PARA MOVIL (-441px)*/
+/*LAS PRUEBAS LAS REALIZARE CON LAS DIMENSIONES DEL PIXEL 5 (393 x 851)*/
 
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
@@ -7,11 +8,11 @@ body {
     font-family: 'roboto', sans-serif;
     margin: 45px 45px;
     text-align: justify;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .BarraNavegacion{
-    padding:5px 0;
+    padding:3px 0;
     background-color: #FFFFFF;
     position: sticky;
     z-index: 1;
@@ -34,8 +35,8 @@ body {
     color: white;
     border-style: outset;
     border-color: black;
-    height: 40px;
-    margin:0px 10px;
+    height: 35px;
+    margin:0px 4px;
 }
 
 .boton:hover{
@@ -85,6 +86,16 @@ hr {
 
 /* A PARTIR DE AQUI TODO ES NECESARIO PARA EL FUNCIONAMIENTO DEL MENU ACORDEON */
 /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
+.acordeon__h2{
+    text-align: left;
+}
+
+.acordeon__imagenes{
+    width: 200px;
+    height: 150px;
+    padding: 1px;
+}
+
 .acordeon {
   color: rgb(0, 0, 0);
   background-color: #BEB7A4;
@@ -97,6 +108,7 @@ hr {
   
 /* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
 .acordeon .etiqueta {
+    text-align: left;
     position: relative;
     padding: 5px 0;
     color: rgb(0, 0, 0);
@@ -109,7 +121,7 @@ hr {
     color: black;
     position: absolute;
     top: 50%;
-    right: -5px;
+    right: -20px;
     font-size: 30px;
     transform: translateY(-50%);
 }
@@ -131,9 +143,10 @@ hr {
 }
 
 .acordeon .contenido__p{
-    min-width: 400px;
+    min-width: 200px;
     flex:1;
-    padding: 10px;
+    padding: 0px;
+    text-align: center;
 }
   
 /* Añade una línea horizontal entre los contenidos */
@@ -158,8 +171,8 @@ hr {
     font-size: 40px;
     text-align: center;
     display: grid;
-    grid-template-rows: 300px 1fr;
-    grid-template-columns: 300px 300px 300px 300px 300px 1fr;
+    grid-template-rows: 150px 1fr;
+    grid-template-columns: 150px 1fr;
     grid-auto-rows: 1fr;
     grid-auto-columns: 1fr;
     grid-auto-flow: dense;
@@ -168,13 +181,13 @@ hr {
 .container_images_random {
     border: 1px solid black;
     object-fit:cover;
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
 }
 
 .container_images_random:first-child {
-    height: 600px;
-    width: 600px;
+    height: 300px;
+    width: 300px;
     grid-row: 1/3;
     grid-column: 1/3;
 }
