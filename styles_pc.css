@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'roboto', sans-serif;
+  margin: 45px 45px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.BarraNavegacion{
+    padding:5px 0;
+    background-color: #FFFFFF;
+    position: sticky;
+    z-index: 1;
+    top:0px;
+}
+
+.BarraNavegacion__botones{
+    display:flex;
+}
+
+.Titulo_h1 {
+    letter-spacing: .3em;
+    text-align: center;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+    font-size: 40px;
+}
+
+.boton {
+    background: #FF3F00;
+    color: white;
+    border-style: outset;
+    border-color: black;
+    height: 40px;
+    margin:0px 10px;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background: #FF7F11;
+    color: black;
+}
+
+.SubApartados__h4 {
+    color: #FF3F00;
+    text-shadow: #FF7F11 0.1em 0.1em 0.2em;
+    font-size: 18px;
+}
+
+hr {
+    border: 1px solid #000000;
+}
+
+/* A PARTIR DE AQUI TODO ES NECESARIO PARA EL FUNCIONAMIENTO FLEX DEL FORM */
+.EnvioMensaje{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #BEB7A4
+}
+.EnvioMensaje__form{
+    min-width: 250px;
+    flex:1;
+    text-align:center;
+    padding: 10px;
+}
+.EnvioMensaje__form-input{
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+}
+.EnvioMensaje__form-input:focus{
+    background: lightgrey;
+}
+.EnvioMensaje__imagen{
+    width:200px;
+    margin:auto;
+}
+
+
+/* A PARTIR DE AQUI TODO ES NECESARIO PARA EL FUNCIONAMIENTO DEL MENU ACORDEON */
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
+.acordeon {
+  color: rgb(0, 0, 0);
+  background-color: #BEB7A4;
+  padding: 1px 45px;
+}
+
+.acordeon .contenedor {
+    position: relative;
+}
+  
+/* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+.acordeon .etiqueta {
+    position: relative;
+    padding: 5px 0;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+  
+/* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+.acordeon .etiqueta::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+  
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+.acordeon .contenido {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    background: #BEB7A4;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.acordeon .contenido__img{
+    margin:5px;
+}
+
+.acordeon .contenido__p{
+    min-width: 400px;
+    flex:1;
+    padding: 10px;
+}
+  
+/* Añade una línea horizontal entre los contenidos */
+.acordeon hr {
+    border: 1px solid #FF3F00;
+}
+
+/* Muestra la parte de contenido cuando está activa. Establece la altura */
+.acordeon .contenedor.activa .contenido {
+    height: auto;
+}
+  
+/* Cambia de signo positivo a negativo una vez activado */
+.acordeon .contenedor.activa .etiqueta::before {
+    content: '-';
+    font-size: 30px;
+}
+
+
+/* PARTE ENCARGADA DE GESTIONAR LA GALERIA DE IMAGENES */
+.containerGrid {
+    font-size: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    grid-template-columns: 300px 300px 300px 300px 300px 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+  }
+
+.container_images_random {
+    border: 1px solid black;
+    object-fit:cover;
+    height: 300px;
+    width: 300px;
+}
+
+.container_images_random:first-child {
+    height: 600px;
+    width: 600px;
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
