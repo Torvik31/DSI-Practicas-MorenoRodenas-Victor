@@ -85,6 +85,10 @@ hr {
 
 /* A PARTIR DE AQUI TODO ES NECESARIO PARA EL FUNCIONAMIENTO DEL MENU ACORDEON */
 /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
+.acordeon__imagenes{
+    padding: 1px;
+}
+
 .acordeon {
   color: rgb(0, 0, 0);
   background-color: #BEB7A4;
