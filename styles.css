@@ -149,3 +149,30 @@ hr {
     content: '-';
     font-size: 30px;
 }
+
+
+/* PARTE ENCARGADA DE GESTIONAR LA GALERIA DE IMAGENES */
+.containerGrid {
+    font-size: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 300px 300px 1fr;
+    grid-template-columns: 300px 300px 300px 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+  }
+
+.container_images_random {
+    border: 1px solid black;
+    object-fit:cover;
+    height: 300px;
+    width: 300px;
+}
+
+.container_images_random:first-child {
+    height: 600px;
+    width: 600px;
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
